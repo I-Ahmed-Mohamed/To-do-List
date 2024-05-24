@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/main.css">
+</head>
+<body>
+ <header>
+        <div class=" header-container py-3 d-flex justify-content-between">
+            <h2 class="w-50"><i class="fas fa-clipboard-check"></i> To-do List</h2>
+            <div class="input-group mb-3 w-25 d-flex flex-column">
+                <div class="d-flex">
+                    <input id="userInput" type="text" class="form-control" placeholder="I need...."
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-secondary" type="button" onclick="addItem()" id="submitBtn">Submit</button>
+                </div>
+                <div class="d-flex justify-content-end mt-3">
+                    <input type="text" id="searchInput" onkeyup="searchItem()" class="form-control"  placeholder="Search....">
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    
+    <section id="home">
+        <div class="container">
+            <div id="homeContent">
+                <!-- <div class="home-item mb-2 p-3 rounded-3  text-dark mx-auto w-25 bg-white d-flex justify-content-between align-items-center">
+                    <p id="x" class="mb-0" >${allList[i].name}</p>
+                    <i class=" fa-sharp fa-solid fa-trash" onClick="deleteItem(${i})"></i>
+                </div> -->
+                <!-- <div class="home-item mb-2 p-3 rounded-3  text-dark mx-auto w-25 bg-white d-flex justify-content-between align-items-center">
+                    <p id="x" class="mb-0" >facebook</p>
+                    <i class=" fa-sharp fa-solid fa-trash"></i>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/all.min.js"></script>
+    <script src="Js/main.js"></script>
+</body>
+</html>
